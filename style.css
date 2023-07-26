@@ -120,8 +120,8 @@ h1 {
   padding: 10px 0;
   color: var(--details-color);
   border-radius: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .score {
@@ -149,15 +149,15 @@ h1 {
   padding: 0 20px;
 }
 
-..restartButton {
-    padding: 10px 0; 
+.restartButton {
+  padding-top: 30px;
 }
 
 .restartButton button {
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 25px;
-    font-family: var(--base-font);
-    padding: 5px 20px;
-    color: var(--text-primary-color);
-  }
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 25px;
+  font-family: var(--base-font);
+  padding: 5px 20px;
+  color: var(--text-primary-color);
+}

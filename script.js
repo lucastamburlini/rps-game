@@ -85,7 +85,6 @@ function restartGame() {
 
   containerUserScore.innerHTML = userScore;
   containerComputerScore.innerHTML = computerScore;
-  containerResult.innerHTML = "Result";
 }
 
 restart.addEventListener("click", restartGame);
