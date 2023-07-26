@@ -19,17 +19,13 @@ function startGame() {
   const playerName = document.getElementById("playerName").value;
 
   if (playerName.trim() === "") {
-    alert("Please enter your name.");
+    alert("Please enter your name!");
     return;
   }
 
-  // Hide the game setup and display the game section
   gameSetup.style.display = "none";
   gameSection.style.display = "block";
 
-  // You can do additional setup tasks here if needed.
-
-  // Now that the game has started, add event listeners to the buttons
   rockBtn.addEventListener("click", playGame);
   paperBtn.addEventListener("click", playGame);
   scissorsBtn.addEventListener("click", playGame);

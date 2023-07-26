@@ -8,7 +8,9 @@
   --bg-color: #000000;
   --text-primary-color: #ffffff;
   --text-secondary-color: #7a7171;
-  --primary-color: #6928d3;
+  --primary-color: #af66da;
+  --secondary-color: #cb97e7;
+  --details-color: #ffd15b;
 
   --base-font: "Roboto", sans-serif;
   --display-font: "Roboto", sans-serif;
@@ -28,5 +30,31 @@ body {
 
 h1 {
   font-family: var(--display-font);
+  color: var(--details-color);
+  margin-bottom: 32px;
 }
 
+.gameSetup {
+  width: 90%;
+  margin: auto;
+}
+
+.gameSetup img {
+  width: 150px;
+  margin-bottom: 32px;
+}
+
+.gameSetup form {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 10px;
+  width: 60%;
+  margin: auto;
+}
+
+.gameSetup input {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+}
