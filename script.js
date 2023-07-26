@@ -9,7 +9,6 @@ const gameSection = document.getElementById("gameSection");
 const instructions = document.getElementById("instructionsGame");
 const containerUserScore = document.getElementById("userScore");
 const containerComputerScore = document.getElementById("computerScore");
-const containerChoiceComputer = document.getElementById("choiceComputer");
 const containerResult = document.getElementById("result");
 
 let userScore = 0;
@@ -40,15 +39,17 @@ function playGame(e) {
   let choice = ["rock", "paper", "scissors"];
   let choiceComputer = choice[Math.floor(Math.random() * 3)];
   let choiceUser = e.currentTarget.id;
-  let containerChoiceComputer = document.getElementById("choiceComputer");
+  let containerChoiceComputer = document.getElementById("computerChoiceImg");
   containerChoiceComputer.innerHTML = choiceComputer;
+
+  computerChoiceImg.src = `assest/${choiceComputer}.png`;
 
   if (choiceUser === choiceComputer) {
     containerResult.innerHTML = "Tie";
   } else if (
     (choiceUser === "rock" && choiceComputer === "scissors") ||
-    (choiceUser === "papel" && choiceComputer === "rock") ||
-    (choiceUser === "scissors" && choiceComputer === "papel")
+    (choiceUser === "paper" && choiceComputer === "rock") ||
+    (choiceUser === "scissors" && choiceComputer === "paper")
   ) {
     winUser();
   } else {

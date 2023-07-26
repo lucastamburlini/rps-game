@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  height: 100%;
+  height: auto;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -94,15 +94,27 @@ h1 {
 
 /* Game Styles */
 
+.instructionsGame {
+  padding-bottom: 15px;
+}
+
 .name {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 0;
+  margin: auto;
+  padding: 10px 0;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
 }
 
 .name h2 {
   padding: 15px 0;
+}
+
+.result {
+  padding: 10px 0;
 }
 
 .score {
@@ -119,6 +131,7 @@ h1 {
 
 .buttonArms img {
   width: 40px;
+  padding: 10px 0;
 }
 
 .buttonArms button {
@@ -131,5 +144,6 @@ h1 {
 /* Footer Styles */
 
 footer {
-  padding: 5px;
+  font-size: 0.8rem;
+  padding: 5px 0;
 }
