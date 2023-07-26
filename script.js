@@ -62,21 +62,29 @@ winUser = () => {
   userScore++;
   containerUserScore.innerHTML = userScore;
   containerResult.innerHTML = "Win!";
+
+  if (userScore === 5) {
+    containerResult.innerHTML = "You won the game!";
+    restartGame();
+  }
 };
 
 winComputer = () => {
   computerScore++;
   containerComputerScore.innerHTML = computerScore;
   containerResult.innerHTML = "Lose!";
+  if (computerScore === 5) {
+    containerResult.innerHTML = "You lost the game.";
+    restartGame();
+  }
 };
 
 function restartGame() {
-  let userScore = 0;
-  let computerScore = 0;
+  userScore = 0;
+  computerScore = 0;
 
   containerUserScore.innerHTML = userScore;
   containerComputerScore.innerHTML = computerScore;
-  containerResult.innerHTML = "Result";
 }
 
 restart.addEventListener("click", restartGame);
