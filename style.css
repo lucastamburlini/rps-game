@@ -7,9 +7,9 @@
 :root {
   --bg-color: #000000;
   --text-primary-color: #ffffff;
-  --text-secondary-color: #7a7171;
+  --text-secondary-color: #ffdfcf;
   --primary-color: #af66da;
-  --secondary-color: #cb97e7;
+  --secondary-color: #cb97e78c;
   --details-color: #ffd15b;
 
   --base-font: "Roboto", sans-serif;
@@ -26,6 +26,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-size: 1.125rem;
 }
 
 h1 {
@@ -35,7 +36,7 @@ h1 {
 }
 
 .gameSetup {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -48,13 +49,33 @@ h1 {
   display: flex;
   flex-direction: column;
   place-content: center;
-  gap: 10px;
+  gap: 20px;
   width: 60%;
   margin: auto;
 }
 
 .gameSetup input {
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 25px;
   border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  font-weight: bold;
+}
+
+.gameSetup button {
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  font-size: 1.125rem;
+}
+
+.gameSetup button:hover {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
 }
