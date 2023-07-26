@@ -34,21 +34,26 @@
         </div>
 
         <div id="gameSection" class="gameSection">
-            <div><span id="instructionsGame">Add 5 points and win the game.</span></div>
+            <div class="instructionsGame"><span id="instructionsGame">The one who reaches 5 points wins!</span></div>
             <div>
-                <div>
-                    <h2>Player 2 (Computer)</h2>
-                    <h3>Score: <span id="computerScore">0</span></h3>
-                </div>
-                <div>
-                    <div>Computer Choice</div>
-                    <div><span id="computerChoice"></span></div>
-                </div>
+                <div>Computer Choice</div>
+                <div><span id="choiceComputer"></span></div>
+            </div>
+            <div class="name ">
+                <h2>Player 2 (Computer)</h2>
+
+
+                <div><span class="score" id="computerScore">0</span></div>
+
             </div>
             <div>
-                <div>
-                    <h2 id="containerUser">Player 1</h2>
-                    <h3>Score: <span id="userScore">0</span></h3>
+                <span class="result" id="result">Result</span>
+            </div>
+            <div>
+                <div class="name user">
+                    <div><span class="score" id="userScore">0</span>
+                    </div>
+                    <h2 id="containerUser"></h2>
                 </div>
                 <div class="buttonArms">
                     <button id="rock"><img src="./assest/rock.png" alt="rock"></button>
@@ -56,9 +61,8 @@
                     <button id="scissors"><img src="./assest/scissors.png" alt="scissors"></button>
                 </div>
             </div>
-            <div>
-                <h2>Result: <span id="result"></span></h2>
-            </div>
+
+            <div><button>Reset</button></div>
         </div>
     </main>
     <script src="./script.js"></script>

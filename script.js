@@ -9,6 +9,8 @@ const gameSection = document.getElementById("gameSection");
 const instructions = document.getElementById("instructionsGame");
 const containerUserScore = document.getElementById("userScore");
 const containerComputerScore = document.getElementById("computerScore");
+const containerChoiceComputer = document.getElementById("choiceComputer");
+const containerResult = document.getElementById("result");
 
 let userScore = 0;
 let computerScore = 0;
@@ -38,9 +40,11 @@ function playGame(e) {
   let choice = ["rock", "paper", "scissors"];
   let choiceComputer = choice[Math.floor(Math.random() * 3)];
   let choiceUser = e.currentTarget.id;
+  let containerChoiceComputer = document.getElementById("choiceComputer");
+  containerChoiceComputer.innerHTML = choiceComputer;
 
   if (choiceUser === choiceComputer) {
-    console.log("Empate");
+    containerResult.innerHTML = "Tie";
   } else if (
     (choiceUser === "rock" && choiceComputer === "scissors") ||
     (choiceUser === "papel" && choiceComputer === "rock") ||
@@ -55,9 +59,11 @@ function playGame(e) {
 winUser = () => {
   userScore++;
   containerUserScore.innerHTML = userScore;
+  containerResult.innerHTML = "Win!";
 };
 
 winComputer = () => {
   computerScore++;
   containerComputerScore.innerHTML = computerScore;
+  containerResult.innerHTML = "Lose!";
 };
