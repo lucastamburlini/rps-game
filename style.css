@@ -134,6 +134,7 @@ h1 {
 
 .gameSection {
   display: none;
+  height: 100%;
 }
 
 .buttonArms img {
