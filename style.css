@@ -12,8 +12,7 @@
   --secondary-color: #cb97e78c;
   --details-color: #ffd15b;
 
-  --base-font: "Roboto", sans-serif;
-  --display-font: "Roboto", sans-serif;
+  --base-font: "Acme", sans-serif;
 }
 
 body {
@@ -54,12 +53,16 @@ h1 {
 }
 
 .gameSetup input {
-  padding: 10px;
-  border-radius: 25px;
+  padding: 15px;
+  border-radius: 50px;
   border: none;
   background-color: var(--secondary-color);
   color: var(--text-secondary-color);
   font-weight: bold;
+  font-family: var(--base-font);
+  font-size: 1.5rem;
+
+  letter-spacing: 0.2rem;
 }
 
 .gameSetup button {
@@ -68,6 +71,7 @@ h1 {
   padding: 10px;
   border-radius: 25px;
   border: none;
+  font-family: var(--base-font);
   background-color: var(--secondary-color);
   color: var(--text-secondary-color);
   font-size: 1.125rem;
@@ -77,4 +81,20 @@ h1 {
   background-color: var(--primary-color);
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Styles Game */
+
+.gameSection {
+  display: none;
+}
+
+.buttonArms img {
+  width: 50px;
+}
+
+.buttonArms button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--base-font);
 }
