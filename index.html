@@ -19,11 +19,12 @@
 <body>
     <main class="container">
 
-        <div>
-            <h1>Rock, Paper or Scissors</h>
-        </div>
+
 
         <div id="gameSetup" class="gameSetup">
+            <div>
+                <h1>Rock, Paper or Scissors</h>
+            </div>
             <div><img src="./assest/logo.png" alt=""></div>
 
             <form id="playerNameForm">
@@ -34,6 +35,9 @@
         </div>
 
         <div id="gameSection" class="gameSection">
+            <div>
+                <h1>Let's play!</h>
+            </div>
             <div class="instructionsGame"><span id="instructionsGame">The one who reaches 5 points wins!</span></div>
             <div id="containerChoiceComputer">
                 <div>Computer Choice</div>
@@ -62,13 +66,10 @@
                 </div>
             </div>
 
-            <div><button>Reset</button></div>
+            <div class="restartButton"><button id="restartButton">Reset</button></div>
         </div>
     </main>
     <script src="./script.js"></script>
-    <footer>
-        By Lucas Tamburlini
-    </footer>
 </body>
 
 </html>

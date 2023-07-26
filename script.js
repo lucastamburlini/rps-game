@@ -10,6 +10,7 @@ const instructions = document.getElementById("instructionsGame");
 const containerUserScore = document.getElementById("userScore");
 const containerComputerScore = document.getElementById("computerScore");
 const containerResult = document.getElementById("result");
+const restart = document.getElementById("restartButton");
 
 let userScore = 0;
 let computerScore = 0;
@@ -68,3 +69,14 @@ winComputer = () => {
   containerComputerScore.innerHTML = computerScore;
   containerResult.innerHTML = "Lose!";
 };
+
+function restartGame() {
+  let userScore = 0;
+  let computerScore = 0;
+
+  containerUserScore.innerHTML = userScore;
+  containerComputerScore.innerHTML = computerScore;
+  containerResult.innerHTML = "Result";
+}
+
+restart.addEventListener("click", restartGame);

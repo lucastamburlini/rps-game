@@ -114,7 +114,14 @@ h1 {
 }
 
 .result {
+  width: 70%;
+  margin: auto;
+  background-color: var(--primary-color);
   padding: 10px 0;
+  color: var(--details-color);
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .score {
@@ -141,9 +148,11 @@ h1 {
   padding: 0 20px;
 }
 
-/* Footer Styles */
-
-footer {
-  font-size: 0.8rem;
-  padding: 5px 0;
-}
+.restartButton button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 25px;
+    font-family: var(--base-font);
+    padding: 5px 20px;
+    color: var(--text-primary-color);
+  }
