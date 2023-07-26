@@ -29,20 +29,19 @@ body {
   font-size: 1.125rem;
 }
 
+.container {
+  width: 80%;
+}
+
 h1 {
   font-family: var(--display-font);
   color: var(--details-color);
-  margin-bottom: 32px;
-}
-
-.gameSetup {
-  width: 80%;
-  margin: auto;
+  margin-bottom: 64px;
 }
 
 .gameSetup img {
   width: 150px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .gameSetup form {
