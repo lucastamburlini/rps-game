@@ -1,46 +1,41 @@
-const rock = document.getElementById("rock");
-const paper = document.getElementById("paper");
-const scissors = document.getElementById("scissors");
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("papel");
+const scissorsBtn = document.getElementById("scissors");
 
-let playerChoice;
-let computerChoice;
-let playerScore = 0;
+let containerUserScore = document.getElementById("userScore");
+let containerComputerScore = document.getElementById("computerScore");
+
+let userScore = 0;
 let computerScore = 0;
 
-/* Event representing the player's choices */
+rockBtn.addEventListener("click", playGame);
+paperBtn.addEventListener("click", playGame);
+scissorsBtn.addEventListener("click", playGame);
 
-rock.addEventListener("click", function () {
-  playerChoice = "rock";
-  playRound();
-});
+function playGame(e) {
+  let choice = ["rock", "paper", "scissors"];
+  let choiceComputer = choice[Math.floor(Math.random() * 3)];
+  let choiceUser = e.currentTarget.id;
 
-paper.addEventListener("click", function () {
-  playerChoice = "paper";
-  playRound();
-});
-
-scissors.addEventListener("click", function () {
-  playerChoice = "scissors";
-  playRound();
-});
-
-/* Function that represents the functioning of the game */
-
-const playRound = () => {
-  const choices = ["rock", "paper", "scissers"];
-  computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
-  if (playerChoice === computerChoice) {
-    return "It's a tie";
+  if (choiceUser === choiceComputer) {
+    console.log("Empate");
   } else if (
-    (playerChoice === "rock" && computerChoice === "scissors") ||
-    (playerChoice === "paper" && computerChoice === "rock") ||
-    (playerChoice === "scissors" && computerChoice === "paper")
+    (choiceUser === "rock" && choiceComputer === "scissors") ||
+    (choiceUser === "papel" && choiceComputer === "rock") ||
+    (choiceUser === "scissors" && choiceComputer === "papel")
   ) {
-    console.log("You win this round!");
-    playerScore++;
+    winUser();
   } else {
-    console.log("You lose this round!");
-    computerScore++;
+    winComputer();
   }
+}
+
+winUser = () => {
+  userScore++;
+  console.log("User: " + userScore);
+};
+
+winComputer = () => {
+  computerScore++;
+  console.log("Computer: " + computerScore);
 };

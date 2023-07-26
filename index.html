@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -15,7 +14,8 @@
         </div>
         <div>
             <div>
-                <h2>Jugador 1</h2>
+                <h2>Player 1</h2>
+                <h3>Score: <span id="userScore">0</span></h3>
             </div>
             <div>
                 <button id="rock">Rock</button>
@@ -25,18 +25,19 @@
         </div>
         <div>
             <div>
-                <h2>Computadora</h2>
+                <h2>Player 2 (Computer)</h2>
+                <h3>Score: <span id="computerScore">0</span></h3>
             </div>
             <div>
-                <button id="rock">Rock</button>
-                <button id="papel">Paper</button>
-                <button id="scissors">Scissor</button>
+                <div>Computer Choice</div>
+                <div><span id="computerChoice"></span></div>
             </div>
         </div>
         <div>
-            <h2>Resultado: </h2>
+            <h2>Result: <span id="result"></span></h2>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
