@@ -22,6 +22,7 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -29,7 +30,12 @@ body {
 }
 
 .container {
+  height: 90%;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  text-align: center;
 }
 
 h1 {
@@ -97,4 +103,9 @@ h1 {
   background-color: transparent;
   border: none;
   font-family: var(--base-font);
+}
+
+footer {
+  display: flex;
+  justify-content: end;
 }
