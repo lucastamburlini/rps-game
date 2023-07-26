@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,29 +16,42 @@
         <div>
             <h1>Rock, Paper or Scissors</h>
         </div>
-        <div>
-            <div>
-                <h2>Player 1</h2>
-                <h3>Score: <span id="userScore">0</span></h3>
-            </div>
-            <div>
-                <button id="rock">Rock</button>
-                <button id="papel">Paper</button>
-                <button id="scissors">Scissor</button>
-            </div>
+
+
+        <div id="gameSetup">
+            <form id="playerNameForm">
+                <label for="playerName">Ingresa tu nombre:</label>
+                <input type="text" id="playerName" required>
+                <button type="button" id="startButton">Comenzar</button>
+            </form>
         </div>
-        <div>
+
+        <div id="gameSection" style="display: none;">
+            <div><span id="instructionsGame">Add 5 points and win the game.</span></div>
             <div>
-                <h2>Player 2 (Computer)</h2>
-                <h3>Score: <span id="computerScore">0</span></h3>
+                <div>
+                    <h2>Player 2 (Computer)</h2>
+                    <h3>Score: <span id="computerScore">0</span></h3>
+                </div>
+                <div>
+                    <div>Computer Choice</div>
+                    <div><span id="computerChoice"></span></div>
+                </div>
             </div>
             <div>
-                <div>Computer Choice</div>
-                <div><span id="computerChoice"></span></div>
+                <div>
+                    <h2 id="containerUser">Player 1</h2>
+                    <h3>Score: <span id="userScore">0</span></h3>
+                </div>
+                <div>
+                    <button id="rock">Rock</button>
+                    <button id="papel">Paper</button>
+                    <button id="scissors">Scissor</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <h2>Result: <span id="result"></span></h2>
+            <div>
+                <h2>Result: <span id="result"></span></h2>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
