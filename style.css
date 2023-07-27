@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  height: auto;
+  height: 100%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body {
 h1 {
   font-family: var(--display-font);
   color: var(--details-color);
-  margin-bottom: 32px;
+  margin: 25px 0;
   font-size: 1.7rem;
 }
 
