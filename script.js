@@ -43,7 +43,7 @@ function playGame(e) {
   let containerChoiceComputer = document.getElementById("computerChoiceImg");
   containerChoiceComputer.innerHTML = choiceComputer;
 
-  computerChoiceImg.src = `assest/${choiceComputer}.png`;
+  computerChoiceImg.src = `assets/${choiceComputer}.png`;
 
   if (choiceUser === choiceComputer) {
     containerResult.innerHTML = "Tie";
